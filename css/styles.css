@@ -4,6 +4,7 @@
   margin: 0 auto;
   position: relative;
   border-radius: 10px;
+  perspective: 1000px;
 }
 
 .left-side {
@@ -21,4 +22,11 @@
   position: absolute;
   border-radius: inherit;
   left: 100%;
+  transform: rotateY(-180deg);
+  transform-origin: left;
+  transition: 1s;
+}
+
+.right-side:hover {
+  transform: rotateY(0);
 }
