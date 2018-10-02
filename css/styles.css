@@ -1,6 +1,24 @@
-.left-side {
+.pokedex {
   width: 400px;
   height: 500px;
-  background-color: red;
   margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.left-side {
+  width: inherit;
+  height: inherit;
+  background-color: red;
+  position: absolute;
+  border-radius: inherit;
+}
+
+.right-side {
+  width: inherit;
+  height: inherit;
+  background-color: blue;
+  position: absolute;
+  border-radius: inherit;
+  left: 100%;
 }
