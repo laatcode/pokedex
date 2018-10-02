@@ -15,7 +15,7 @@
   border-radius: inherit;
 }
 
-.right-side {
+.right-side-back {
   width: inherit;
   height: inherit;
   background-color: blue;
@@ -27,6 +27,21 @@
   transition: 1s;
 }
 
-.right-side:hover {
+.pokedex:hover .right-side-back {
   transform: rotateY(0);
+}
+
+.right-side-front {
+  width: inherit;
+  height: inherit;
+  background-color: peru;
+  position: absolute;
+  border-radius: inherit;
+  transform-origin: right;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.pokedex:hover .right-side-front {
+  transform: rotateY(180deg);
 }
