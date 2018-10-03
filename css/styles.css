@@ -81,7 +81,7 @@
 
 .tab {
   width: 230px;
-  height: 60px;
+  height: 80px;
   background-color: blue;
   position: absolute;
   bottom: 100%;
@@ -95,6 +95,18 @@
 
 .front-tab {
   right: -1px;
+  border-top-left-radius: 0;
+}
+
+.front-tab::before {
+  content: '';
+  border-left: 40px solid blue;
+  border-top: 40px solid green;
+  border-right: 40px solid orange;
+  border-bottom: 40px solid yellow;
+  position: absolute;
+  right: 100%;
+  top: -1px;
 }
 
 .back-tab {
