@@ -13,17 +13,19 @@
   border-radius: 10px;
   background-color: #FF2600;
   position: absolute;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
 
 .left {
 }
 
-.left .buttons-area {
+.left .led-area {
   width: calc(100% - 100px);
   margin: 20px;
 }
 
-.btn {
+.led {
   border-radius: 50%;
   display: inline-block;
   border: 1px solid black;
@@ -38,15 +40,15 @@
   height: 50px;
 }
 
-.btn.first {
+.led.first {
   background-color: red;
 }
 
-.btn.second {
+.led.second {
   background-color: yellow;
 }
 
-.btn.third {
+.led.third {
   background-color: green;
 }
 
