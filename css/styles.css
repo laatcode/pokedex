@@ -82,7 +82,7 @@
 .tab {
   width: 230px;
   height: 80px;
-  background-color: blue;
+  background-color: red;
   position: absolute;
   bottom: 100%;
   border-radius: 10px;
@@ -100,15 +100,29 @@
 
 .front-tab::before {
   content: '';
-  border-left: 40px solid blue;
-  border-top: 40px solid green;
-  border-right: 40px solid orange;
-  border-bottom: 40px solid yellow;
+  border-left: 40px solid transparent;
+  border-top: 40px solid transparent;
+  border-right: 40px solid red;
+  border-bottom: 40px solid red;
   position: absolute;
   right: 100%;
-  top: -1px;
+  top: 0;
+  filter: drop-shadow(-1px -1px 0 black);
 }
 
 .back-tab {
   left: -1px;
+  border-top-right-radius: 0;
+}
+
+.back-tab::before {
+  content: '';
+  border-left: 40px solid red;
+  border-top: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid red;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  filter: drop-shadow(1px -1px 0 black);
 }
