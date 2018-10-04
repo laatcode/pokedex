@@ -105,9 +105,25 @@
   border-right: 40px solid red;
   border-bottom: 40px solid red;
   position: absolute;
-  right: 100%;
+  right: calc(100%);
   top: 0;
   filter: drop-shadow(-1px -1px 0 black);
+}
+
+.triangle-area {
+  height: inherit;
+  width: inherit;
+}
+
+.triangle {
+  content: '';
+  border-left: 15px solid yellow;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  top: 40%;
+  margin-left: 20px;
+  filter: drop-shadow(1px 0 0 black) drop-shadow(-1px 0 0 black);
 }
 
 .back-tab {
