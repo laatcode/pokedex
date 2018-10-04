@@ -1,3 +1,7 @@
+:root {
+  --blue: #28AAFD;
+  --red: #DC0A2D;
+}
 
 .pokedex {
   width: 400px;
@@ -11,9 +15,9 @@
   width: inherit;
   height: inherit;
   border-radius: 10px;
-  background-color: #FF2600;
+  background-color: var(--red);
   position: absolute;
-  border: 1px solid black;
+  border: 2px solid black;
   box-sizing: border-box;
 }
 
@@ -28,20 +32,30 @@
 .led {
   border-radius: 50%;
   display: inline-block;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 10px;
   height: 10px;
   vertical-align: top;
 }
 
-.left .main {
-  background-color: skyblue;
+.left .border-main {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+}
+
+.led.main {
+  background-color: var(--blue);
   width: 50px;
   height: 50px;
+  position: relative;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  box-sizing: border-box;
 }
 
 .led.first {
-  background-color: red;
+  background-color: #ED0A30;
 }
 
 .led.second {
@@ -82,7 +96,7 @@
 .tab {
   width: 230px;
   height: 80px;
-  background-color: red;
+  background-color: var(--red);
   position: absolute;
   bottom: 100%;
   border-radius: 10px;
@@ -102,8 +116,8 @@
   content: '';
   border-left: 40px solid transparent;
   border-top: 40px solid transparent;
-  border-right: 40px solid red;
-  border-bottom: 40px solid red;
+  border-right: 40px solid var(--red);
+  border-bottom: 40px solid var(--red);
   position: absolute;
   right: calc(100%);
   top: 0;
@@ -133,10 +147,10 @@
 
 .back-tab::before {
   content: '';
-  border-left: 40px solid red;
+  border-left: 40px solid var(--red);
   border-top: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 40px solid red;
+  border-bottom: 40px solid var(--red);
   position: absolute;
   left: 100%;
   top: 0;
