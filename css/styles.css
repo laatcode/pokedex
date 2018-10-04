@@ -1,6 +1,7 @@
 :root {
   --blue: #28AAFD;
   --red: #DC0A2D;
+  --gray: #DEDEDE;
 }
 
 .pokedex {
@@ -64,6 +65,15 @@
 
 .led.third {
   background-color: green;
+}
+
+.display-border {
+  width: calc(100% - 80px);
+  height: calc(100% - 280px);
+  background-color: var(--gray);
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .right-back {
