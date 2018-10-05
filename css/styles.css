@@ -159,7 +159,7 @@
 }
 
 .display-border {
-  width: calc(100% - 80px);
+  width: calc(100% - 90px);
   height: calc(100% - 250px);
   background-color: var(--gray);
   border: 2px solid black;
@@ -205,4 +205,19 @@
   left: 0;
   margin: auto;
   border-radius: 10px;
+}
+
+.speaker {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  bottom: 5px;
+}
+
+.speaker .line {
+  width: 30px;
+  height: 2px;
+  margin: 3px 0;
+  background-color: black;
 }
