@@ -221,3 +221,16 @@
   margin: 3px 0;
   background-color: black;
 }
+
+.internal-tab {
+  position: absolute;
+  left: -2px;
+  bottom: -4px;
+  content: '';
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--red);
+  border-left: 15px solid var(--red);
+  box-sizing: border-box;
+  filter: drop-shadow(0 -3px 0 black);
+}
