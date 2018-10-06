@@ -264,21 +264,33 @@
 
 .select-start.left {
   background-color: red;
-  left: 80px;
+  left: 90px;
 }
 
 .select-start.right {
   background-color: blue;
   position: absolute;
-  left: 150px;
+  left: 160px;
 }
 
 .black-btn-left {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #00312B;
+  border: 2px solid black;
   position: absolute;
-  left: 25px;
+  left: 20px;
   top: 30px;
+}
+
+.left-bottom-display {
+  width: 100px;
+  height: 60px;
+  background-color: #51AE5F;
+  border-radius: 5px;
+  border: 2px solid black;
+  position: absolute;
+  left: 90px;
+  top: 50px;
 }
