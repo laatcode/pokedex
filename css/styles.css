@@ -234,3 +234,14 @@
   box-sizing: border-box;
   filter: drop-shadow(0 -3px 0 black);
 }
+
+.display-bottom-led {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 10px;
+  left: 28px;
+}
