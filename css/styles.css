@@ -412,3 +412,14 @@
   border-radius: 5px;
   border: 2px solid black;
 }
+
+.yellow-led {
+  width: 30px;
+  height: 30px;
+  background-color: #F8DB1D;
+  position: absolute;
+  top: 245px;
+  right: 70px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
