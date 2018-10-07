@@ -2,6 +2,7 @@
   --blue: #28AAFD;
   --red: #DC0A2D;
   --gray: #DEDEDE;
+  --black: #00312B;
 }
 
 .pokedex {
@@ -264,20 +265,20 @@
 
 .select-start.left {
   background-color: red;
-  left: 90px;
+  left: 100px;
 }
 
 .select-start.right {
   background-color: blue;
   position: absolute;
-  left: 160px;
+  left: 170px;
 }
 
 .black-btn-left {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #00312B;
+  background-color: var(--black);
   border: 2px solid black;
   position: absolute;
   left: 20px;
@@ -291,6 +292,50 @@
   border-radius: 5px;
   border: 2px solid black;
   position: absolute;
-  left: 90px;
+  left: 100px;
   top: 50px;
+}
+
+.d-pad {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+
+.d-pad > div {
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.d-pad .horizontal {
+  width: inherit;
+  height: 30px;
+}
+
+.d-pad .vertical {
+  height: inherit;
+  width: 30px;
+}
+
+.d-pad .no-border {
+  width: 34px;
+  height: 30px;
+  border: none;
+  border-radius: 0;
+}
+
+.d-pad .center {
+  width: 8px;
+  height: 8px;
+  border: 2px solid black;
+  border-radius: 50%;
 }
