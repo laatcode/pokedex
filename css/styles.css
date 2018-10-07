@@ -423,3 +423,23 @@
   border-radius: 50%;
   border: 2px solid black;
 }
+
+.input {
+  background-color: var(--black);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 240px;
+  height: 40px;
+}
+
+.number {
+  top: 285px;
+}
+
+.name {
+  top: 340px;
+}
