@@ -347,3 +347,16 @@
 .btn:active {
   transform: scale(.9);
 }
+
+.left-display {
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  background-color: var(--black);
+  border-radius: 10px;
+  border: 2px solid black;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
