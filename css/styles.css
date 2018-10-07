@@ -3,6 +3,7 @@
   --red: #DC0A2D;
   --gray: #DEDEDE;
   --black: #00312B;
+  --btn-blue: #28AAFD;
 }
 
 .pokedex {
@@ -349,7 +350,7 @@
 }
 
 .left-display {
-  width: 300px;
+  width: 260px;
   height: 70px;
   position: absolute;
   background-color: var(--black);
@@ -359,4 +360,25 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.blue-btn-area {
+  width: 260px;
+  height: 80px;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blue-btn-area .btn {
+  width: 50px;
+  height: 40px;
+  background-color: var(--btn-blue);
+  border: 1px solid black;
+  border-radius: 5px;
 }
