@@ -356,22 +356,23 @@
 
 .left-display {
   width: 270px;
-  height: 70px;
+  height: 110px;
   position: absolute;
   background-color: var(--black);
   border-radius: 10px;
   border: 2px solid black;
-  top: 20px;
+  top: 10px;
   left: 0;
   right: 0;
   margin: 0 auto;
+  color: white;
 }
 
 .blue-btn-area {
   width: 270px;
   height: 80px;
   position: absolute;
-  top: 110px;
+  top: 135px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -391,7 +392,7 @@
 .black-btn-area {
   position: absolute;
   right: 70px;
-  top: 200px;
+  top: 225px;
 }
 
 .black-btn-area .btn {
