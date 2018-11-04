@@ -434,6 +434,9 @@
   border-radius: 10px;
   width: 240px;
   height: 40px;
+  color: white;
+  padding: 0 15px;
+  font-size: 30px;
 }
 
 .number {
