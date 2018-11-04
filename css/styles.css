@@ -437,10 +437,16 @@
   color: white;
   padding: 0 15px;
   font-size: 30px;
+  outline: none;
 }
 
 .number {
   top: 285px;
+}
+
+.number::-webkit-inner-spin-button,
+.number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 .name {
