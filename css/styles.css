@@ -209,6 +209,11 @@
   border-radius: 10px;
 }
 
+#image {
+  display: block;
+  margin: 0 auto;
+}
+
 .speaker {
   width: 30px;
   height: 30px;
