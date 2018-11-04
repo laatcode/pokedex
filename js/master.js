@@ -3,6 +3,8 @@ const $nameForm = document.querySelector('#name-form')
 const $image = document.querySelector('#image')
 const $text = document.querySelector('#name-form input')
 const $textarea = document.querySelector('#textarea')
+const speach = window.speechSynthesis
+
 
 async function getData(entrypoint, param) {
   const response =  await fetch(`https://pokeapi.co/api/v2/${entrypoint}/${param}/`)
@@ -26,4 +28,11 @@ $numberForm.addEventListener('submit', async (ev) => {
   const species = await getData('pokemon-species',id)
   const flavor = species.flavor_text_entries.find((entry) => entry.language.name === 'es').flavor_text
   $textarea.value = flavor
+
+  speach.cancel()
+  let utterance = new SpeechSynthesisUtterance()
+  utterance.text = flavor
+  utterance.lang = 'es'
+
+  speach.speak(utterance)
 })
