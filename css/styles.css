@@ -79,6 +79,7 @@
   border-top-left-radius: 0;
 }
 
+.pokedex.is-active .right-back,
 .pokedex:hover .right-back {
   transform: rotateY(0);
 }
@@ -92,6 +93,7 @@
   border-top-right-radius: 0;
 }
 
+.pokedex.is-active .right-front,
 .pokedex:hover .right-front {
   transform: rotateY(180deg);
 }

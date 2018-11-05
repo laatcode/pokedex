@@ -4,6 +4,7 @@ const $image = document.querySelector('#image')
 const $id = document.querySelector('#number-form input')
 const $text = document.querySelector('#name-form input')
 const $textarea = document.querySelector('#textarea')
+const $pokedex = document.querySelector('#pokedex');
 const speach = window.speechSynthesis
 
 
@@ -14,6 +15,7 @@ async function getData(entrypoint, param) {
 }
 
 async function formAction(param){
+  $pokedex.classList.add('is-active');
   const pokemon = await getData('pokemon', param)
 
   // Establecer id del Pokemon
