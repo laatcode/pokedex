@@ -4,9 +4,10 @@ const $image = document.querySelector('#image')
 const $id = document.querySelector('#number-form input')
 const $text = document.querySelector('#name-form input')
 const $textarea = document.querySelector('#textarea')
-const $pokedex = document.querySelector('#pokedex');
+const $pokedex = document.querySelector('#pokedex')
+const $ledMain = document.querySelector('.led.main')
 const speach = window.speechSynthesis
-
+let utterance = new SpeechSynthesisUtterance()
 
 async function getData(entrypoint, param) {
   const response =  await fetch(`https://pokeapi.co/api/v2/${entrypoint}/${param}/`)
@@ -33,9 +34,10 @@ async function formAction(param){
   $textarea.value = flavor
 
   speach.cancel()
-  let utterance = new SpeechSynthesisUtterance()
   utterance.text = flavor
   utterance.lang = 'es'
+  utterance.onstart = () => $ledMain.style.animation = 'blink .5s infinite'
+  utterance.onend = () => $ledMain.style.animation = ''
 
   speach.speak(utterance)
 }

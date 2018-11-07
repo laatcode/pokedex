@@ -1,5 +1,6 @@
 :root {
   --blue: #28AAFD;
+  --lightblue: #CFEBFC;
   --red: #DC0A2D;
   --gray: #DEDEDE;
   --black: #00312B;
@@ -55,6 +56,13 @@
   top: calc(50% - 25px);
   left: calc(50% - 25px);
   box-sizing: border-box;
+  box-shadow: inset -5px -5px 15px #165F8C;
+}
+
+@keyframes blink {
+  0% { background-color: var(--lightblue)}
+  40% { background-color: var(--blue)}
+  80% { background-color: var(--lightblue)}
 }
 
 .led.first {
